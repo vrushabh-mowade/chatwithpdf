@@ -5,7 +5,6 @@ import React from "react";
 import { db } from '@/lib/db/index'
 import { chats } from '@/lib/db/schema'
 import { eq } from "drizzle-orm";
-import { NextResponse } from "next/server";
 import ChatSideBar from "@/components/ChatSideBar";
 import PDFViewer from "@/components/PDFViewer";
 import { error } from "console";

@@ -1,4 +1,4 @@
-import { Configuration, OpenAIApi } from 'openai-edge'
+// import { Configuration, OpenAIApi } from 'openai-edge'
 import { CohereClient, Cohere } from 'cohere-ai';
 
 // const config = new Configuration({

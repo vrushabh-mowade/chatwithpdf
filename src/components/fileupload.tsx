@@ -15,7 +15,7 @@ const FileUpload = () => {
     const [uploading, setuploading] = React.useState(false);
     
     const { mutate, isPending } = useMutation({
-        mutationFn: async ({ file_key, file_name }: { file_key: String, file_name: String }) => {
+        mutationFn: async ({ file_key, file_name }: { file_key: string, file_name: string }) => {
             if (!file_key || !file_name) {
                 console.log("missing filename or filekey in mutatefun")
             }

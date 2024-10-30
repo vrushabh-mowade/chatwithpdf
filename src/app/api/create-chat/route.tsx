@@ -17,7 +17,8 @@ export async function POST(req: Request) {
         // const pages = await loadS3IntotheAws(file_key);
         console.log("File Key:", file_key);
 
-        const pages = await loadS3IntotheAws(file_key).catch(err => {
+        // const pages = 
+        await loadS3IntotheAws(file_key).catch(err => {
             console.error("Error loading from S3:", err);
             throw new Error("S3 loading failed");
         });

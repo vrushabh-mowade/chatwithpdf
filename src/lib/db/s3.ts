@@ -31,7 +31,7 @@ export async function UplaodtoS3(file : File){
             file_name : file.name
         })
     } catch (error) {
-        console.log("error while uploading to S3");
+        console.log("error while uploading to S3" ,error);
 }
 
 }

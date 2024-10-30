@@ -1,4 +1,5 @@
-import {ClerkProvider,SignInButton,SignedIn,SignedOut,UserButton } from '@clerk/nextjs'
+import {ClerkProvider } from '@clerk/nextjs'  
+// SignInButton,SignedIn,SignedOut,UserButton
 import './globals.css'
 import Providers from '@/components/Providers';
 import {Toaster} from 'react-hot-toast';

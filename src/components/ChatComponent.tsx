@@ -6,28 +6,13 @@ import { Send } from 'lucide-react';
 import { Button } from './ui/button';
 import MessageList from './MessageList';
 import { Message } from 'ai/react';
-import { messages as _messages } from '@/lib/db/schema';
-import { db } from '@/lib/db';
+// import { messages as _messages } from '@/lib/db/schema';
+
 
 type Props = {
     chatId: string
 };
 
-// // Mockup function for Cohere API call
-// const CohereStream = async (input: string, onStart: () => void, onCompletion: (response: string) => void) => {
-//     onStart(); // Call onStart to save the user message
-
-//     // Simulate a delay for the API call
-//     const response = await new Promise<{ text: string }>((resolve) => {
-//         setTimeout(() => {
-//             // Mock response from Cohere API
-//             resolve({ text: `Cohere response to: ${input}` });
-//         }, 1000);
-//     });
-
-//     // Call onCompletion with the response from the Cohere API
-//     onCompletion(response.text);
-// };
 
 const ChatComponent = ({ chatId }: Props) => {
     console.log("chat id is", chatId);
