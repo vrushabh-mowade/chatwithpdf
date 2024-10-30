@@ -4,7 +4,7 @@ import { generateText, Message } from 'ai';
 import { db } from '@/lib/db';
 import { chats } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
-import { getContext } from '@/lib/context';
+// import { getContext } from '@/lib/context';
 
 type MessageArray = {
   messages: Message[];
@@ -29,9 +29,9 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "chat not found" }, { status: 404 });
     }
     
-    const fileKey = _chats[0].fileKey;
-    const lastMessage = message;
-    const context = await getContext(lastMessage, fileKey);
+    // const fileKey = _chats[0].fileKey;
+    // const lastMessage = message;
+    // const context = await getContext(lastMessage, fileKey);
 
     // const prompt1 = {
     //   role: "system",
