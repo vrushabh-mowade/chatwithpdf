@@ -20,7 +20,7 @@ export async function POST(req: Request) {
         // const pages = 
         await loadS3IntotheAws(file_key).catch(err => {
             console.error("Error loading from S3:", err);
-            throw new Error("S3 loading failed");
+            // throw new Error("S3 loading failed");
         });
         
         const chat_Id = await db.insert(chats).values({
